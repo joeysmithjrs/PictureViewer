@@ -2,7 +2,7 @@
 
 var picList = new Array (7);
 var locationData = new Array(7);
-var captionData = new Array(7)
+var captionData = new Array(7);
 
 
 var bButtonListener;
@@ -30,7 +30,7 @@ picList[2] = "images/p2.jpg";
 picList[3] = "images/p3.jpg";
 picList[4] = "images/p4.jpg";
 picList[5] = "images/p5.jpg";
-picList[6] = "images/p6.jpg";
+picList[6] = "images/p6.png";
 
 var whatPicture;
 var whatLocation;
@@ -68,9 +68,9 @@ var whatCaption = 0;
 		whatCaption--
 		whatLocation--
 	if(whatPicture < 0) {
-		whatPicture = piclist.length - 1;
-		whatCaption = piclist.length - 1;
-		whatLocation = piclist.length - 1;
+		whatPicture = picList.length - 1;
+		whatCaption = captionData.length - 1;
+		whatLocation = locationData.length - 1;
 	}
 	document.getElementById("pictureView").src = picList[whatPicture];
 	document.getElementById("location").innerHTML = locationData[whatLocation];
